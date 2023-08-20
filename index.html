@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Johan Chereau" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Javascript -->
+    <script src="app.js" defer></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+
+  <body>
+    <main>
+      <article class="rating-card">
+        <!-- Default state -->
+        <div class="rating-card--default-state">
+          <div class="rating-card__icon">
+            <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                fill="#FC7614"
+              />
+            </svg>
+          </div>
+          <h1 class="rating-card__title">How did we do?</h1>
+          <p class="rating-card__description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form class="rating-card__form">
+            <div class="rating-card__ratings flex">
+              <div class="rating-card__rating">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="rating1"
+                  name="rating"
+                  value="1"
+                />
+                <label for="rating1">1</label>
+              </div>
+              <div class="rating-card__rating">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="rating2"
+                  name="rating"
+                  value="2"
+                />
+                <label for="rating2">2</label>
+              </div>
+              <div class="rating-card__rating">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="rating3"
+                  name="rating"
+                  value="3"
+                />
+                <label for="rating3">3</label>
+              </div>
+              <div class="rating-card__rating">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="rating4"
+                  name="rating"
+                  value="4"
+                />
+                <label for="rating4">4</label>
+              </div>
+              <div class="rating-card__rating">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="rating5"
+                  name="rating"
+                  value="5"
+                />
+                <label for="rating5">5</label>
+              </div>
+            </div>
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- Submitted state -->
+        <div class="rating-card--submitted-state">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="Submitted form icon"
+          />
+
+          <p class="rating-card__rating-sent">You selected 4 out of 5</p>
+
+          <h2 class="rating-card__title">Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a
+          class="text-link text-primary text-bold-regular"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a
+          class="text-link text-primary text-bold-regular"
+          href="https://www.frontendmentor.io/profile/JohanChereau"
+          >Johan Chereau </a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
