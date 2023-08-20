@@ -50,8 +50,8 @@ Users should be able to:
 
 ### Links
 
-- Solution on Front End Mentor: [Click here]()
-- Live Site URL: [Click here]()
+- Solution on Front End Mentor: [Click here](https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-semantic-html-css-js-and-bem-XlG390LPxS)
+- Live Site URL: [Click here](https://johanchereau.github.io/interactive-rating-component-main/)
 
 
 ## My process
